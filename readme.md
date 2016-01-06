@@ -25,17 +25,19 @@
 2. Install Vagrant: http://www.vagrantup.com/downloads.html
 
 3. On console add homestead box:
-
+   ```
    vagrant box add laravel/homestead --box-version 0.3.3
+   ```
 
 4. Create working directory e.g. ~/Dev/laravel and checkout this repository to "homestead" subfolder
-
+   ```
    mkdir ~/Dev/laravel
    cd ~/Dev/laravel
    git clone git@github.com:azayarni/homestead_mongo.git homestead
    
    cd homestead
    bash init.sh
+   ```
    
 5. Edit Homestead configuration ~/.homestead/Homestead.yaml
    
@@ -60,8 +62,9 @@
    ```
    
 6. Run Vagrant provision. It takes some time and hopefuly doesn't fail 
-
+   ```
    vagrant up
+   ```
    
 7. Done? Now just add mysite.dev or whatever local domain you are using to the /etc/hosts file
 
@@ -69,6 +72,5 @@
    192.168.10.10  mysite.dev
    ```
 
-
-
+   More details: https://laravel.com/docs/5.1/homestead (without Mongo)
 
